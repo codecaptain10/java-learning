@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import fizzbuzz.Fizzbuzz;
 
 public class Fundamentals {
 
@@ -18,6 +19,10 @@ public class Fundamentals {
 
         //4 ----- break, continue -----
         //breakLoop();
+
+        //5 ----- Fizzbuzz game -----
+        Fizzbuzz fizbuzz = new Fizzbuzz();
+        fizbuzz.main(args);
 
 
     }
