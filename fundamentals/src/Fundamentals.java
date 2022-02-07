@@ -6,10 +6,17 @@ public class Fundamentals {
         //Start information
         //System.out.println("Let's learning Java basic!");
 
-      //Variables: String, int, boolean
-        giveYourData();
+        //Variables: String, int, boolean
+        //giveYourData();
+
+        //If...else conditional
+        //System.out.println(isWoman("Julia"));
+        //buyBeer(17,3.20);
+    ;
+
     }
 
+    //Example about using variables
     public static void giveYourData(){
 
         Scanner scanner = new Scanner(System.in);
@@ -39,4 +46,30 @@ public class Fundamentals {
         System.out.println("Your name is "+name+", you "+age+" years old and "+message);
 
     }
+
+    //Example about using if...else
+    public static boolean isWoman(String name){
+        if(name.endsWith("a")){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    //Second example about if...else and operators && and II
+    public static void buyBeer(int age, double cash){
+        if(age >= 18 && cash >= 2.59 ){
+            System.out.println("You are able to buy a beer.");
+        }else if(age >= 18 || cash >= 2.59){
+            System.out.println("You are to young or you have to less money.");
+        }else{
+            System.out.println("You aren't able to buy a bear.");
+        }
+    }
+
+
+
+
+
+
 }
