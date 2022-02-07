@@ -26,8 +26,11 @@ public class Fundamentals {
         //fizbuzz.main(args);
 
         //6 ----- Random Number game -----
-        RandomNumberGame game = new RandomNumberGame();
-        game.main(args);
+        //RandomNumberGame game = new RandomNumberGame();
+        //game.main(args);
+
+        //7 ----- Array and for each method -----
+        //getSquad();
 
 
 
@@ -113,6 +116,16 @@ public class Fundamentals {
                 System.out.println("Continue... ");
                 continue;
             }
+        }
+
+    }
+
+    public static void getSquad(){
+        String [] players = {"Szczęsny","Glik","Lewandowski","Krychowiak","Zieliński"};
+
+        //for each
+        for(String player: players){
+            System.out.println(player);
         }
 
     }
