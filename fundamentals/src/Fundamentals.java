@@ -3,16 +3,19 @@ import java.util.Scanner;
 public class Fundamentals {
 
     public static void main(String[]args){
-        //Start information
+        //0 ----- Start information -----
         //System.out.println("Let's learning Java basic!");
 
-        //Variables: String, int, boolean
+        //1 ----- Variables: String, int, boolean -----
         //giveYourData();
 
-        //If...else conditional
+        //2 ----- If...else conditional -----
         //System.out.println(isWoman("Julia"));
         //buyBeer(17,3.20);
-    ;
+
+        //3 ----- for loop -----
+        //printMessageXTimes("I like programming in Java.",10);
+
 
     }
 
@@ -65,6 +68,15 @@ public class Fundamentals {
         }else{
             System.out.println("You aren't able to buy a bear.");
         }
+    }
+
+    //Example with for loop
+    public static void printMessageXTimes(String message, int howMuch){
+
+        for(int i = 1; i <= howMuch; i++){
+            System.out.println(i+". "+message);
+        }
+
     }
 
 
