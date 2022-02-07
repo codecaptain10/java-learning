@@ -16,6 +16,9 @@ public class Fundamentals {
         //3 ----- for loop -----
         //printMessageXTimes("I like programming in Java.",10);
 
+        //4 ----- break, continue -----
+        //breakLoop();
+
 
     }
 
@@ -75,6 +78,30 @@ public class Fundamentals {
 
         for(int i = 1; i <= howMuch; i++){
             System.out.println(i+". "+message);
+        }
+
+    }
+
+    //Example with break and continue
+    public static void breakLoop(){
+        //Show: 1,2,3,4,5
+        System.out.println("----------");
+        for(int i=1; i < 10; i++){
+            System.out.println(i);
+            if(i == 6){
+                System.out.println("Break... ");
+                break;
+            }
+        }
+
+        //Show: 1,2,3,4,5,7,8,9,10
+        System.out.println("----------");
+        for(int i=1; i<11; i++){
+            System.out.println(i);
+            if(i == 6){
+                System.out.println("Continue... ");
+                continue;
+            }
         }
 
     }
