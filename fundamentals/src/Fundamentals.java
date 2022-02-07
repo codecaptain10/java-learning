@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import fizzbuzz.Fizzbuzz;
+import randomNumberGame.RandomNumberGame;
 
 public class Fundamentals {
 
@@ -21,8 +22,13 @@ public class Fundamentals {
         //breakLoop();
 
         //5 ----- Fizzbuzz game -----
-        Fizzbuzz fizbuzz = new Fizzbuzz();
-        fizbuzz.main(args);
+        //Fizzbuzz fizbuzz = new Fizzbuzz();
+        //fizbuzz.main(args);
+
+        //6 ----- Random Number game -----
+        RandomNumberGame game = new RandomNumberGame();
+        game.main(args);
+
 
 
     }
