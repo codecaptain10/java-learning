@@ -16,32 +16,25 @@ public class RandomNumberGame {
         int counter;
         //Random number
         Random random = new Random();
-        int randomNumber = random.nextInt(10)+1;
+        int randomNumber = random.nextInt(100)+1;
+        checkNumber(randomNumber);
 
+
+    }
+
+    public static void checkNumber(int randomNumber){
 
         int userNumber;
         System.out.println("Give your number: ");
         Scanner scanner = new Scanner(System.in);
         userNumber = Integer.parseInt(scanner.nextLine());
-        checkNumber(userNumber,randomNumber);
 
-
-
-    }
-
-    public static void checkNumber(int userNumber, int randomNumber){
-
-        Scanner scanner = new Scanner(System.in);
         if(userNumber > randomNumber){
             System.out.println("Too BIG...Try again!");
-            System.out.println("Give your number: ");
-            userNumber = Integer.parseInt(scanner.nextLine());
-            checkNumber(userNumber,randomNumber);
+            checkNumber(randomNumber);
         }else if(userNumber < randomNumber){
             System.out.println("Too SMALL...Try again!");
-            System.out.println("Give your number: ");
-            userNumber = Integer.parseInt(scanner.nextLine());
-            checkNumber(userNumber,randomNumber);
+            checkNumber(randomNumber);
         }else{
             System.out.println("YEEES! That was "+randomNumber+". You won!");
             System.out.println("----- FINISHED -----");
