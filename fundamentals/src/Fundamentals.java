@@ -40,7 +40,7 @@ public class Fundamentals {
         //showMeals();
 
         //10 ----- HashMap -----
-        //showClubs();
+        showClubs();
 
 
 
@@ -192,8 +192,15 @@ public class Fundamentals {
 
         //Show keys
         Set <String> keys = clubs.keySet();
+        System.out.println("KEYS:");
         for(String key:keys){
-            //System.out.println(key);
+            System.out.println(key);
+        }
+
+        Collection <String> values = clubs.values();
+        System.out.println("VALUES:");
+        for(String value:values){
+            System.out.println(value);
         }
 
     }
