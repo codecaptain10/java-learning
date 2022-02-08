@@ -33,8 +33,8 @@ public class PartyManager {
             switch (userChoice){
                 case 1 -> party.displayGuests();
                 case 2 -> party.addGuest();
-                case 3 -> System.out.println("Option 3");
-                case 4 -> System.out.println("Option 4");
+                case 3 -> party.displayMeals();
+                case 4 -> party.displayGuestByPhoneNumber();
                 case 5 -> shouldContinue = false;
             }
         }

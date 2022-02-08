@@ -1,10 +1,14 @@
 package partyManager;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Party {
     private ArrayList<Guest> guests = new ArrayList<>();
+    private HashSet<String> meals = new HashSet<>();
+    private HashMap<Integer,Guest> phoneToGuest = new HashMap<>();
     Scanner scanner = new Scanner(System.in);
 
     //Add new guest
@@ -26,6 +30,8 @@ public class Party {
         }
 
         Guest guest = new Guest(name,meal,phoneNumber,isVegan);
+        meals.add(meal);
+        phoneToGuest.put(phoneNumber,guest);
 
         guests.add(guest);
 
@@ -37,8 +43,26 @@ public class Party {
         for (Guest guest:guests) {
             System.out.println();
            guest.displayGuestInformation();
-           
+
         }
+    }
+
+    public void displayMeals(){
+        System.out.println("--- Actuall meals list: ---");
+        for (String meal:meals) {
+            System.out.println(meal);
+
+        }
+    }
+
+    public void displayGuestByPhoneNumber(){
+        System.out.println("Give searching number: ");
+        Integer phoneNumber = Integer.valueOf(scanner.nextLine());
+        Guest guest = phoneToGuest.get(phoneNumber);
+        System.out.println("Searching by phone ...");
+
+        guest.displayGuestInformation();;
+
     }
 
 
