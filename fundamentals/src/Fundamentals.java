@@ -2,6 +2,7 @@ import java.util.*;
 
 import fizzbuzz.Fizzbuzz;
 import randomNumberGame.RandomNumberGame;
+import partyManager.PartyManager;
 
 public class Fundamentals {
 
@@ -40,8 +41,11 @@ public class Fundamentals {
         //showMeals();
 
         //10 ----- HashMap -----
-        showClubs();
+        //showClubs();
 
+        //11 ----- Party Manager Game -----
+        PartyManager partyManager = new PartyManager();
+        partyManager.main(args);
 
 
     }
