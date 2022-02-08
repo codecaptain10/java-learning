@@ -44,4 +44,12 @@ public class Guest {
     public void setVegan(boolean vegan) {
         isVegan = vegan;
     }
+
+    public void displayGuestInformation(){
+        System.out.println("Name: "+name);
+        System.out.println("Prefer meal: "+meal);
+        System.out.println("Phone number: "+phoneNumber);
+        String isVeganString = isVegan ? "Yes" : "No";
+        System.out.println("Vegan?: "+isVeganString);
+    }
 }
