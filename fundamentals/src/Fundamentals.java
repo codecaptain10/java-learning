@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
+
 import fizzbuzz.Fizzbuzz;
 import randomNumberGame.RandomNumberGame;
 
@@ -37,6 +35,9 @@ public class Fundamentals {
 
         //8 ----- ArrayList and methods -----
         //showListElements();
+
+        //9 ----- HashSet -----
+        //showMeals();
 
 
 
@@ -162,6 +163,19 @@ public class Fundamentals {
 
     }
 
+
+    public static void showMeals(){
+        Set <String> meals = new HashSet<>();
+
+        meals.add("Pizza");
+        meals.add("Kebab");
+        meals.add("Salat");
+        meals.add("Pizza");
+
+        for(String meal:meals){
+            System.out.println(meal); //Pizza, Kebab, Salat  !No Pizza duplicate!
+        }
+    }
 
 
 
