@@ -39,6 +39,9 @@ public class Fundamentals {
         //9 ----- HashSet -----
         //showMeals();
 
+        //10 ----- HashMap -----
+        //showClubs();
+
 
 
     }
@@ -175,6 +178,24 @@ public class Fundamentals {
         for(String meal:meals){
             System.out.println(meal); //Pizza, Kebab, Salat  !No Pizza duplicate!
         }
+    }
+
+
+    public static void showClubs(){
+        HashMap <String, String> clubs = new HashMap<>();
+
+        clubs.put("Messi","PSG");
+        clubs.put("Lewandowski","Bayern");
+        clubs.put("Ronaldo", "Manchaster");
+
+        clubs.get("Lewndowski"); //Bayern
+
+        //Show keys
+        Set <String> keys = clubs.keySet();
+        for(String key:keys){
+            //System.out.println(key);
+        }
+
     }
 
 
