@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 import fizzbuzz.Fizzbuzz;
 import randomNumberGame.RandomNumberGame;
@@ -31,6 +34,9 @@ public class Fundamentals {
 
         //7 ----- Array and for each method -----
         //getSquad();
+
+        //8 ----- ArrayList and methods -----
+        //showListElements();
 
 
 
@@ -126,6 +132,32 @@ public class Fundamentals {
         //for each
         for(String player: players){
             System.out.println(player);
+        }
+
+    }
+
+
+    public static void showListElements(){
+
+        ArrayList <String> methods = new ArrayList<>();
+
+        methods.add("add()");
+        methods.add("remove()");
+        methods.add("clear()");
+        methods.add("addAll()");
+        methods.add("contains()");
+        methods.add("get()");
+        methods.add("isEmpty()");
+
+        methods.contains("remove()"); //true
+        methods.get(0); // add()
+
+        //Sort ArrayList
+        Collections.sort(methods);
+
+        //Show ArrayList
+        for (String method: methods){
+            System.out.println(method);
         }
 
     }
