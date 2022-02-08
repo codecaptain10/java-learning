@@ -31,8 +31,8 @@ public class PartyManager {
 
             //switch instruction since JAVA 12
             switch (userChoice){
-                case 1 -> System.out.println(party.getGuests());
-                case 2 -> party.addGuest("Szymon");
+                case 1 -> party.displayGuests();
+                case 2 -> party.addGuest();
                 case 3 -> System.out.println("Option 3");
                 case 4 -> System.out.println("Option 4");
                 case 5 -> shouldContinue = false;
