@@ -10,6 +10,8 @@ public class Main {
 
         //New instance of class Car
         Car car = new Car();
+        Car audi = new Car("Audi", "A7", 300000,110,"silver",true);
+        
 
 
     }
