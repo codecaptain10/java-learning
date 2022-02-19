@@ -19,6 +19,12 @@ public class Car {
         this.isSportCar = isSportCar;
     }
 
+    public Car(String mark, String model){
+        this.mark = mark;
+        this.model = model;
+
+    }
+
     public Car(){
         this.mark = "New Mark";
         this.model = "New Model";
@@ -27,4 +33,5 @@ public class Car {
         this.color ="blue";
         this.isSportCar = true;
     }
+
 }
