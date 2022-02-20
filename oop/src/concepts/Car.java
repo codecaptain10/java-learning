@@ -26,12 +26,19 @@ public class Car {
     }
 
     public Car(){
-        this.mark = "New Mark";
-        this.model = "New Model";
-        this.prise = 0;
-        this.middSpeed = 50;
-        this.color ="blue";
-        this.isSportCar = true;
+       
+    }
+
+    //Methods
+    public int driveFaster(int faster){
+        this.middSpeed = this.middSpeed + faster;
+        return this.middSpeed;
+    }
+
+    public void tellAboutCar(){
+        System.out.println("Your car is a new model of "+this.mark+" "+this.model+".");
+        System.out.println("It cost "+this.prise+".");
+
     }
 
 }
