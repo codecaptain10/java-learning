@@ -26,7 +26,7 @@ public class Car {
     }
 
     public Car(){
-       
+
     }
 
     //Methods
@@ -35,7 +35,8 @@ public class Car {
         return this.middSpeed;
     }
 
-    public void tellAboutCar(){
+    //No access to this method from object instance
+    private void tellAboutCar(){
         System.out.println("Your car is a new model of "+this.mark+" "+this.model+".");
         System.out.println("It cost "+this.prise+".");
 

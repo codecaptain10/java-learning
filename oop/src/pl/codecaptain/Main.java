@@ -13,6 +13,10 @@ public class Main {
         Car audi = new Car("Audi", "A7", 300000,110,"silver",true);
         Car vw = new Car("Volkswagen", "Passat");
 
+        //Run public method
+        //audi.driveFaster(15);
 
+        //No access to private method
+        //audi.tellAboutCar()
     }
 }
