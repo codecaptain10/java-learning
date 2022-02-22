@@ -2,25 +2,26 @@ package computerSimulator;
 
 import computerSimulator.drive.HDDDrive;
 import computerSimulator.drive.SSDDrive;
+import computerSimulator.file.imageFile.GIFImageFile;
+import computerSimulator.file.imageFile.JPGImageFile;
+import computerSimulator.file.musicfile.MP3MusicFile;
 import computerSimulator.usbdevice.MemoryStick;
 import computerSimulator.usbdevice.Mouse;
 
 public class App {
     public static void main(String[]args){
-        //Computer with SSD Drive (interface instance)
-        Monitor monitor = new Monitor();
-        HDDDrive hddDrive = new HDDDrive();
-       Computer computer = new Computer(monitor, hddDrive);
+      GIFImageFile gif1 = new GIFImageFile("nazwa1.gif",100);
+      JPGImageFile jpg1 = new JPGImageFile("nazwa1.jpg",200, 80);
+      MP3MusicFile mp3file = new MP3MusicFile("plik.mp3",400,"ACDC", "Thunderstack",100);
 
-        //hddDrive.addFile(new File("How to learn Java ?"));
-        //hddDrive.listFiles();
+      SSDDrive ssdDrive = new SSDDrive();
+      ssdDrive.addFile(gif1);
+      ssdDrive.addFile(jpg1);
+      ssdDrive.addFile(mp3file);
 
-        MemoryStick memoryStick = new MemoryStick("Pendrive Stick");
-        Mouse mouse = new Mouse("Mouse");
+        ssdDrive.listFiles();
+        ssdDrive.findFile("plik.mp3");
+        System.out.println(mp3file.getSize());
 
-        computer.addUsbDevice(memoryStick);
-        computer.addUsbDevice(mouse);
-        computer.removeUsbDevice(memoryStick);
-        computer.removeUsbDevice(mouse);
     }
 }
