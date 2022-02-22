@@ -1,8 +1,5 @@
 package computerSimulator.file.imageFile;
 
-import computerSimulator.file.File;
-import computerSimulator.file.FileType;
-
 public class JPGImageFile extends AbstractImageFile {
 
     int compression;
@@ -12,7 +9,7 @@ public class JPGImageFile extends AbstractImageFile {
       this.compression = compression;
 
     }
-    
+
     public int getCompression() {
         return compression;
     }

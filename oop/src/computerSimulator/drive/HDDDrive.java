@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 public class HDDDrive implements Drive {
-    ArrayList<File> files = new ArrayList<>();
+    private ArrayList<File> files = new ArrayList<>();
 
     @Override
     public void addFile(File file) {

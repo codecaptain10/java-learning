@@ -1,26 +1,16 @@
 package computerSimulator.file.imageFile;
 
-import computerSimulator.file.File;
+import computerSimulator.file.AbstractFile;
 import computerSimulator.file.FileType;
 
-public abstract class AbstractImageFile implements File {
-    protected String name;
-    protected int size;
+public abstract class AbstractImageFile extends AbstractFile {
+
 
     public AbstractImageFile(String name, int size) {
-        this.name = name;
-        this.size = size;
+       super(name,size);
     }
 
-    @Override
-    public String getName() {
-        return this.name;
-    }
 
-    @Override
-    public int getSize() {
-        return this.size;
-    }
 
     @Override
     public FileType getType() {
