@@ -1,8 +1,11 @@
-package computerSimulator;
+package computerSimulator.drive;
+
+import computerSimulator.File;
+import computerSimulator.drive.Drive;
 
 import java.util.HashMap;
 
-public class SSDDrive implements Drive{
+public class SSDDrive implements Drive {
 
     HashMap<String, File> files = new HashMap<>();
 
@@ -13,7 +16,7 @@ public class SSDDrive implements Drive{
 
     @Override
     public void listFiles() {
-        
+
     }
 
     @Override

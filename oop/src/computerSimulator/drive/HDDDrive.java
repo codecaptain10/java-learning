@@ -1,8 +1,11 @@
-package computerSimulator;
+package computerSimulator.drive;
+
+import computerSimulator.File;
+import computerSimulator.drive.Drive;
 
 import java.util.ArrayList;
 
-public class HDDDrive implements Drive{
+public class HDDDrive implements Drive {
     ArrayList<File> files = new ArrayList<>();
 
     @Override

@@ -1,4 +1,6 @@
-package computerSimulator;
+package computerSimulator.drive;
+
+import computerSimulator.File;
 
 public interface Drive {
 
