@@ -1,7 +1,6 @@
 package computerSimulator.drive;
 
-import computerSimulator.File;
-import computerSimulator.drive.Drive;
+import computerSimulator.file.File;
 
 import java.util.Collection;
 import java.util.HashMap;

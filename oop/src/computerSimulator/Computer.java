@@ -1,6 +1,7 @@
 package computerSimulator;
 
 import computerSimulator.drive.Drive;
+import computerSimulator.usbdevice.USBDevice;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ public class Computer {
     private Drive drive;
     private Headphones headphones;
 
-    List<USBDevice> usbDevices = new ArrayList<>();
+    private List<USBDevice> usbDevices = new ArrayList<>();
 
 
     //constructors
@@ -49,5 +50,25 @@ public class Computer {
         return usbDevices;
     }
 
+    public void addUsbDevice(USBDevice usbDevice){
+       boolean isConnected =  usbDevice.connect();
+
+       if(isConnected){
+           usbDevices.add(usbDevice);
+        }
+
+    }
+
+
+    public void removeUsbDevice(USBDevice usbDevice){
+        boolean isDisconnected =  usbDevice.disconnect();
+
+        if(isDisconnected) {
+
+            usbDevices.remove(usbDevice);
+        }
+
+
+    }
 
 }
