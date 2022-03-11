@@ -8,6 +8,7 @@ import sudoku.userinterfaces.IUserInterfaceContract;
 import sudoku.userinterfaces.UserInterfaceImpl;
 
 import java.io.IOException;
+import java.text.RBTableBuilder;
 
 public class SudokuApplication extends Application {
 
@@ -20,6 +21,7 @@ public class SudokuApplication extends Application {
 
         uiImpl = new UserInterfaceImpl(primaryStage);
         try {
+            RBTableBuilder SudokuBuildLogic;
             SudokuBuildLogic.build(uiImpl);
         }catch(IOException e){
             e.printStackTrace();
