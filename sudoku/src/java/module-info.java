@@ -1,10 +1,9 @@
-module app.sudoku {
+module java.sudoku {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens app.sudoku to javafx.fxml;
-    exports app.sudoku;
-    exports sudoku;
     opens sudoku to javafx.fxml;
+    exports sudoku;
+    opens java.sudoku to javafx.fxml;
 }

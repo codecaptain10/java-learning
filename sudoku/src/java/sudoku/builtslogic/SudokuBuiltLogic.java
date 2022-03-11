@@ -5,6 +5,7 @@ import sudoku.persistence.LocalStorageImpl;
 import sudoku.problemdomain.IStorage;
 import sudoku.problemdomain.SudokuGame;
 import sudoku.userinterfaces.IUserInterfaceContract;
+import sudoku.userinterfaces.logic.ControllLogic;
 
 import java.io.IOException;
 
@@ -27,7 +28,7 @@ public class SudokuBuiltLogic {
             storage.updateGameData(initialState);
         }
 
-        IUserInterfaceContract.EventListener uiLogic = new ControlLogic(storage, userInterface);
+        IUserInterfaceContract.EventListener uiLogic = new ControllLogic(storage, userInterface);
         userInterface.setListener(uiLogic);
         userInterface.updateBoard(initialState);
     }

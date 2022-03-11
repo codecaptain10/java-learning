@@ -245,6 +245,6 @@ public class UserInterfaceImpl implements  IUserInterfaceContract.View, EventHan
                 ((SudokuTextField) source).getX(),
                 ((SudokuTextField) source).getY(),
                 value
-        )
+        );
     }
 }

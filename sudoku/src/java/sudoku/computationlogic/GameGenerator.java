@@ -46,7 +46,7 @@ public class GameGenerator {
 
     public static int[][] getSolvedGame(){
         Random random = new Random(System.currentTimeMillis());
-        int[][] nowGrid = new int[GRID_BOUNDARY][GRID_BOUNDARY];
+        int[][] newGrid = new int[GRID_BOUNDARY][GRID_BOUNDARY];
 
         for(int value = 1; value <= GRID_BOUNDARY; value++){
             int allocations = 0;
@@ -94,9 +94,11 @@ public class GameGenerator {
         return newGrid;
     }
 
-    private static void clearArray(int[][] newGrid){
-        for(int xIndex = 0; xIndex < GRID_BOUNDARY; yIndex++){
-            newGrid[xIndex][yIndex] = ;
+    private static void clearArray(int[][] newGrid) {
+        for (int xIndex = 0; xIndex < GRID_BOUNDARY; xIndex++) {
+            for (int yIndex = 0; yIndex < GRID_BOUNDARY; yIndex++) {
+                newGrid[xIndex][yIndex] = 0;
+            }
         }
     }
 
